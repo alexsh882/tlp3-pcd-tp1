@@ -7,6 +7,8 @@ que puedas formar un palíndromo. Si no es posible formar un palíndromo, debes 
 def palindrome_reorder(word):
     # Seteo las palabras, de modo que no me se repitan las letras
     setLetters = set(word)
+    # Ordeno la palabra ingresada de manera descendente
+    setLetters = sorted(setLetters, reverse=True)
     # Creo un array para almacenar el resultado de las operaciones
     palindrome = []
     # Creo un boleano, al cual se le asignara el valor True cuando se encuentre la letra central
